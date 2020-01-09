@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Survey -->
+    <div class="card">
+        <div class="card-header">
+            Friend Survey | 1 = Worst | 5 = Best
+        </div>
+        <div class="card-body">
+            <form role="form">
+                <h3 class="user-name">Name:</h3>
+                <input type="text" id="name">
+
+                <h3 class="user-name">Photo:</h3>
+                <input type="url" id="picture">
+
+                <div class="form-group">
+                    <label for="reserve-name">How good was Toy Story 2</label>
+                    <select name="Toy-Story" id="Q1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">How good is Live PD</label>
+                    <select name="Live-PD" id="Q2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Rate sherbert ice cream</label>
+                    <select name="Ice-Cream" id="Q3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you enjoy music in the shower</label>
+                    <select name="Music" id="Q4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you like cheese</label>
+                    <select name="Cheese" id="Q5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you eat meat</label>
+                    <select name="Meat" id="Q6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you wear flip flops in public</label>
+                    <select name="Flip-Flops" id="Q7">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you like rainy weather</label>
+                    <select name="Rainy" id="Q8">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you like christmas music before thanksgiving</label>
+                    <select name="Christmas" id="Q9">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserve-name">Do you like pina coladas</label>
+                    <select name="Pina-Colada" id="Q10">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#myModal">Submit</button>
+            </form>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friend Link</a> | <a
+                    href="https://github.com/thomasrios/Friend-Finder">Github</a>
+        </div>
+    </footer>
+
+    </div>
+
+    <script>
+        $(".submit").on("click", function (event) {
+            event.preventDefault;
+            var findingFriend = {
+                name: $(name).val(),
+                photo: $(picture).val(),
+                scores: [
+                    $(Q1).val(),
+                    $(Q2).val(),
+                    $(Q3).val(),
+                    $(Q4).val(),
+                    $(Q5).val(),
+                    $(Q6).val(),
+                    $(Q7).val(),
+                    $(Q8).val(),
+                    $(Q9).val(),
+                    $(Q10).val()
+                ]
+            }
+
+            $.post("/api/friends", findingFriend, function (data) {
+                $(".modal-body").text(data.friend + " is your new friend!");
+                var image = "<img width='200px' src='" + data.photo + "' alt='person'";
+                $(".modal-body").html($(image));
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>
